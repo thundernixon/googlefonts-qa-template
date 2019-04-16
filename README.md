@@ -17,13 +17,12 @@ The sources can be built with FontMake, but I've put together some specific buil
 
 ### Step 1: Set up the project locally
 
-The build process requires you to open up a terminal and navigate to this project's directory. Open a terminal, then navigate to the a directory (folder) for type projects, and git clone this repo.
+The build process requires you to open up a terminal and navigate to the current project's directory. Open a terminal, then navigate to the a directory (folder) for type projects, and git clone this repo.
 
 ```bash
-cd path/to/type_repos_directory
+cd path/to/your_type_repos_directory/current_project
 
-# then
-git clone https://github.com/SorkinType/Merriweather.git
+# git clone the project if you don't already have it
 ```
 
 You should use a Python virtual environment to build this project. If you've never set up a virtual environment before, [read more about it in this guide](https://packaging.python.org/tutorials/installing-packages/#creating-virtual-environments).
@@ -54,7 +53,7 @@ pip install -r requirements.txt
 
 The first time you run the build, you will need to give run permissions to the build scripts.
 
-On the command line, navigate to the project folder (`cd Encode-Sans`), and then give permissions to the build script with:
+On the command line, from the project folder, and then give permissions to the build script with:
 
 ```bash
 chmod +x sources/build.sh

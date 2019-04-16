@@ -12,8 +12,7 @@
 # 3. If this is your first time running the move, 
 # 
 # 4. call this script from the root of your font project repo, with the absolute path your your local google/fonts repo
-# `move-check /Users/YOUR_LOCAL_USERNAME/PATH/fonts`
-
+#    `move-check /Users/YOUR_LOCAL_USERNAME/PATH/fonts`
 
 # -------------------------------------------------------------------
 # UPDATE THESE VARIABLES AS NEEDED ----------------------------------
