@@ -1,4 +1,4 @@
-# Template files for Google Fonts QA & Variable Font upgrades (macOS)
+# Template files for Google Fonts QA & Variable Font upgrades
 
 This is a work-in-progress repo to document some useful techniques, scripts, and workflows in quality assurance (QA) and variable-font upgrades for Google Fonts projects. It seeks to document and save lessons learned from projects including Inter, Fira Code, Merriweather, Encode Code, and Maven Pro, and more.
 
