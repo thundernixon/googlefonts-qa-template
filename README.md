@@ -72,3 +72,14 @@ Then, run the build script (or any of the others) by entering its relative path 
 ```bash
 sources/build.sh
 ```
+
+## Check process
+
+### FontBakery 
+
+Run `googlefonts-qa/check.py` to product FontBakery checks.
+
+### Diffing fonts against existing versions on Google Fonts
+
+1. Download existing fonts from Google Fonts (or git clone the entire google/fonts repo)
+2. Follow the [Installation](https://github.com/googlefonts/fontdiffenator#installation) and [Usage](https://github.com/googlefonts/fontdiffenator#usage) instructions in googlefonts/diffenator.
