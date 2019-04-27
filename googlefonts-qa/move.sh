@@ -26,6 +26,9 @@ familyname="fontname"
 # Where checks are saved. Don't edit this if you have a "googlefonts-qa" at top level in the project. 
 thisQADir="$thisDir/googlefonts-qa"
 
+# If you're a member of the google/fonts repo, probably change this to "upstream"
+remoteToPushTo="origin"
+
 # -------------------------------------------------------------------
 # sets up script and check for required argument --------------------
 
@@ -111,4 +114,4 @@ done
 git add .
 git commit -m "$familyname: $fontVersion added."
 
-git push --force upstream $familyname
+git push --force $remoteToPushTo $familyname
