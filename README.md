@@ -33,7 +33,7 @@ You can set up a Python 3 virtual environment with:
 python3 -m venv ./venv
 ```
 
-Here, `python3 -m venv` calls the virtual-environment-making module, then the `./venv` gives it a path to setup a virtual environment in (you could give a different path, but this is a conventional name). 
+Here, `python3 -m venv` calls the virtual-environment-making module, then the `./venv` gives it a path to setup a virtual environment in (you could give a different path, but this is a conventional name).
 
 Before you install dependencies or run the build, you need to activate the virtual environment with:
 
@@ -48,6 +48,8 @@ Once you've activated the venv, install requirements by pointing pip to the `req
 ```bash
 pip install -r requirements.txt
 ```
+
+Note: right now, gftools [may give you some installation issues](https://github.com/googlefonts/gftools/issues/121). This most likely will require you to install some other specific requirements on your computer and/or in the virtual environment. I would provide more detail, but I don't fully understand it right now.
 
 ### Step 2: Give permissions to build scripts
 
@@ -75,7 +77,7 @@ sources/build.sh
 
 ## Check process
 
-### FontBakery 
+### FontBakery
 
 Run `googlefonts-qa/check.py` to product FontBakery checks.
 
