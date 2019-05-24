@@ -31,24 +31,16 @@ ttfs=$(ls ../fonts/ttfs/*.ttf)
 echo $ttfs
 for ttf in $ttfs
 do
-	gftools fix-dsig -f $ttf;
-	gftools fix-nonhinting $ttf "$ttf.fix";
-	mv "$ttf.fix" $ttf;
+	gftools fix-dsig --autofix $ttf;
+	gftools fix-nonhinting $ttf $ttf;
 done
 rm ../fonts/ttfs/*backup*.ttf
 
 vfs=$(ls ../fonts/variable/*.ttf)
 for vf in $vfs
 do
-	gftools fix-dsig -f $vf;
-	gftools fix-nonhinting $vf "$vf.fix";
-	mv "$vf.fix" $vf;
-	ttx -f -x "MVAR" $vf; # Drop MVAR. Table has issue in DW
-	rtrip=$(basename -s .ttf $vf)
-	new_file=../fonts/variable/$rtrip.ttx;
-	rm $vf;
-	ttx $new_file
-	rm ../fonts/variable/*.ttx
+	gftools fix-dsig --autofix $vf;
+	gftools fix-nonhinting $vf $vf
 done
 rm ../fonts/variable/*backup*.ttf
 
@@ -57,8 +49,6 @@ for vf in $vfs
 do
 	mv "$vf.fix" $vf;
 done
-
-
 
 cd ..
 
