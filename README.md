@@ -79,7 +79,7 @@ sources/build.sh
 
 ### FontBakery
 
-Run `googlefonts-qa/check.py` to product FontBakery checks.
+Run `googlefonts-qa/check.py` to produce FontBakery checks.
 
 ### Diffing fonts against existing versions on Google Fonts
 
